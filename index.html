@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="_container">
+            <div class="content">
+                <div class="content__search search">
+                    <input class="search__input" type="text" placeholder="enter the city" value="Aktobe">
+                    <a class="img-search" href="#">
+                        <img class="search__img" src="img/search.svg" alt="search">
+                    </a>
+                </div>
+                <div class="content__block block">
+                    <div class="block__tabs tabs">
+                        <div class="tabs__body">
+                            <div id="tab_01" class="tabs__scoreboard scoreboard">
+                                <div class="scoreboard__number">
+                                    <h2 class="scoreboard__title-number">14</h2>
+                                    <img src="img/mask.svg" alt="symbol">
+                                </div>
+                                <div class="scoreboard__main-icon">
+                                    <img src="img/icons-cloud.svg" alt="icons-cloud">
+                                </div>
+                                <div class="scoreboard__title-city">
+                                    <h3 class="title-city">Aktobe</h3>
+                                    <a href="#">
+                                        <img id="add-city" src="img/like.svg" alt="like">
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="tab_02" class="tabs__scoreboard scoreboard">
+                                <div class="scoreboard__title">
+                                    <h3 class="title-city">Aktobe</h3>
+                                </div>
+                                <div class="scoreboard__ul">
+                                    <ul class="scoreboard__parameters">
+                                        <li>Temperature: 14</li>
+                                        <li>Feels like: 10</li>
+                                        <li>Weather: Clouds</li>
+                                        <li>Sunrise: 03:21</li>
+                                        <li>Sunset: 18:54</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div id="tab_03" class="tabs__scoreboard scoreboard">
+                                <div class="scoreboard__title">
+                                    <h3 class="title-city">Aktobe</h3>
+                                </div>
+                                <div class="scoreboard__items">
+                                    <div class="scoreboard__item time">
+                                        <div class="time__soom soom">
+                                            <span class="soom-day">17 May</span>
+                                            <span class="soom-time">12:00</span>
+                                        </div>
+                                        <div class="time__status status">
+                                            <div class="status-temperature">
+                                                <ul class="temperature">
+                                                    <li>Temperature: 13</li>
+                                                    <li>Feels like: 10</li>
+                                                </ul>
+                                            </div>
+                                            <div class="status-icon">
+                                                <span>Rain</span>
+                                                <img src="img/icons-rain.svg" alt="icons-rain">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="scoreboard__item time">
+                                        <div class="time__soom soom">
+                                            <span class="soom-day">17 May</span>
+                                            <span class="soom-time">15:00</span>
+                                        </div>
+                                        <div class="time__status status">
+                                            <div class="status-temperature">
+                                                <ul class="temperature">
+                                                    <li>Temperature: 13</li>
+                                                    <li>Feels like: 10</li>
+                                                </ul>
+                                            </div>
+                                            <div class="status-icon">
+                                                <span>Rain</span>
+                                                <img src="img/icons-rain.svg" alt="icons-rain">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="scoreboard__item time">
+                                        <div class="time__soom soom">
+                                            <span class="soom-day">17 May</span>
+                                            <span class="soom-time">18:00</span>
+                                        </div>
+                                        <div class="time__status status">
+                                            <div class="status-temperature">
+                                                <ul class="temperature">
+                                                    <li>Temperature: 13</li>
+                                                    <li>Feels like: 10</li>
+                                                </ul>
+                                            </div>
+                                            <div class="status-icon">
+                                                <span>Rain</span>
+                                                <img src="img/icons-rain.svg" alt="icons-rain">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <nav class="tabs__items">
+                            <a href="#tab_01" class="tabs__item">
+                                <span>Now</span>
+                            </a>
+                            <a href="#tab_02" class="tabs__item">
+                                <span>Details</span>
+                            </a>
+                            <a href="#tab_03" class="tabs__item">
+                                <span>Forecast</span>
+                            </a>
+                        </nav>
+                    </div>
+                    <div class="block__cities cities">
+                        <div class="cities__locations">
+                            <h4 class="cities__title">Added Locations:</h4>
+                        </div>
+                        <div class="cities__list list">
+                            <ul class="list__city">
+                                <li>
+                                    <a href="#">Amur</a>
+                                </li>
+                                <li>
+                                    <a href="#">Samara</a>
+                                </li>
+                                <li>
+                                    <a href="#">Bali</a>
+                                </li>
+                                <li>
+                                    <a href="#">Dane</a>
+                                </li>
+                                <li>
+                                    <a href="#">Kilo</a>
+                                </li>
+                                <li>
+                                    <a href="#">Nur-Sultan</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
