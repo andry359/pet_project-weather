@@ -75,7 +75,6 @@ h6 {
 }
 /*--------------------*/
 
-/* font-family: 'Roboto', sans-serif; */
 body {
     min-height: 100%;
     position: relative;
@@ -84,20 +83,17 @@ body {
 .wrapper {
     height: 462px;
     width: 621px;
-    background-color: red;
-    margin: 250px auto;
+    margin: 0 auto;
 }
 ._container {
     padding: 14px 10px;
 }
 .content {
-    /* margin: 14px 10px; */
     border: 1px solid #000;
 }
 /* голова страницы */
 .content__search {
     width: 100%;
-    /* height: 45px; */
     padding: 12px 10px 12px 15px;
     display: flex;
     border-bottom: 1px solid #000;
@@ -130,23 +126,16 @@ body {
 .tabs {
     flex: 0 1 50%;
     border-right: 1px solid #000;
-    /* height: 364px; */
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     position: relative;
 }
 .scoreboard {
-    /* ниже прошлое имя tabs__scoreboard
-    .tabs__body { */
-    /* height: 339px; */
-    /* } */
     display: none;
 }
 .scoreboard:nth-child(1) {
     padding: 20px 18px;
-    /* display: flex;
-    justify-content: space-between; */
 }
 .scoreboard:nth-child(1) .scoreboard__number {
     width: 100%;
@@ -234,6 +223,12 @@ body {
     max-height: 220px;
     margin-top: 35px;
     overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.scoreboard:nth-child(2) .scoreboard__ul::-webkit-scrollbar {
+    width: 0;
+    height: 0;
 }
 .scoreboard:nth-child(2) .scoreboard__ul ul {
     font-family: "Roboto", sans-serif;
@@ -249,7 +244,104 @@ body {
     padding-bottom: 10px;
 }
 .scoreboard:nth-child(3) {
-    background-color: firebrick;
+    padding: 20px 18px;
+}
+.scoreboard:nth-child(3) .scoreboard__title {
+    width: 100%;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.scoreboard:nth-child(3) .scoreboard__title h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000;
+}
+.scoreboard:nth-child(3) .scoreboard__items {
+    max-height: 219px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.scoreboard:nth-child(3) .scoreboard__items::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+.scoreboard:nth-child(3) .scoreboard__items .time {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    width: 100%;
+    height: 183px;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 8px 10px;
+}
+.scoreboard:nth-child(3) .scoreboard__items .time .soom {
+    display: flex;
+    justify-content: space-between;
+}
+.scoreboard:nth-child(3) .scoreboard__items .time .soom span {
+    display: block;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000;
+}
+.scoreboard:nth-child(3) .scoreboard__items .time .status {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 38px;
+}
+.scoreboard:nth-child(3) .scoreboard__items .time .status .status-temperature ul {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000;
+}
+.scoreboard:nth-child(3) .scoreboard__items .time .status .status-temperature ul li {
+    padding: 4px;
+}
+.scoreboard:nth-child(3) .scoreboard__items .time .status .status-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40px;
+    height: 58px;
+    margin-top: 3px;
+}
+.scoreboard:nth-child(3) .scoreboard__items .time .status .status-icon span {
+    display: block;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000;
+}
+.scoreboard:nth-child(3) .scoreboard__items .time .status .status-icon img {
+    width: 31px;
+    height: 31px;
 }
 .scoreboard:target {
     display: block;
@@ -272,19 +364,19 @@ body {
     line-height: 21px;
     letter-spacing: 0em;
     text-align: left;
-    color: #000000;
+    color: #968f8f;
+}
+.tabs__item span {
+    position: relative;
+    z-index: 10;
 }
 .tabs__item:not(:last-child) {
     border-right: 1px solid #000;
 }
-/* .tabs__item span::before {
-    position: relative;
-    z-index: 2;
-    color: #fff;
-} */
 .tabs__item:hover {
+    background-color: #e4dcdc;
+    color: #000;
 }
-
 .scoreboard:nth-child(1)::before {
     content: "";
     height: 45px;
@@ -318,16 +410,6 @@ body {
     color: #fff;
     cursor: pointer;
 }
-/* .scoreboard:nth-child(3)::before span {
-    position: relative;
-    z-index: 2;
-    color: #fff;
-} */
-.tabs__item::before {
-    /* background-color: #000000;
-    color: #fff; */
-}
-
 /* блок простой */
 .cities {
     flex: 0 1 50%;
@@ -352,12 +434,16 @@ body {
     color: #000;
 }
 .list {
-    padding-top: 35px;
-    padding-left: 18px;
-    height: 315px;
+    padding: 35px 18px;
+    min-height: 315px;
+    max-height: 315px;
     overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
-.list__city {
+.list::-webkit-scrollbar {
+    width: 0;
+    height: 0;
 }
 .list__city li {
     padding-bottom: 10px;
