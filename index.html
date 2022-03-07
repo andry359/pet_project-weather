@@ -17,8 +17,9 @@
         <div class="_container">
             <div class="content">
                 <div class="content__search search">
-                    <input class="search__input" type="text" placeholder="enter the city" value="Aktobe">
-                    <a class="img-search" href="#">
+                    <input id="searchInput" class="search__input" type="text" placeholder="enter the city"
+                        value="Aktobe">
+                    <a id="imgSearch" class="img-search" href="#tab_01">
                         <img class="search__img" src="img/search.svg" alt="search">
                     </a>
                 </div>
@@ -27,15 +28,15 @@
                         <div class="tabs__body">
                             <div id="tab_01" class="tabs__scoreboard scoreboard">
                                 <div class="scoreboard__number">
-                                    <h2 class="scoreboard__title-number">14°</h2>
+                                    <h2 id="scoreboardTitleNumber" class="scoreboard__title-number">14°</h2>
                                     <!-- <img src="img/mask.svg" alt="symbol"> -->
                                 </div>
                                 <div class="scoreboard__main-icon">
-                                    <img src="img/icons-cloud.svg" alt="icons-cloud">
+                                    <img id="mainIcon" src="img/icons-cloud.svg" alt="icons-cloud">
                                 </div>
                                 <div class="scoreboard__title-city">
-                                    <h3 class="title-city">Aktobe</h3>
-                                    <a href="#">
+                                    <h3 id="titleCity" class="title-city">Aktobe</h3>
+                                    <a id="addCity" href="#tab_01">
                                         <img id="add-city" src="img/like.svg" alt="like">
                                     </a>
                                 </div>
@@ -133,7 +134,7 @@
                             <h4 class="cities__title">Added Locations:</h4>
                         </div>
                         <div class="cities__list list">
-                            <ul class="list__city">
+                            <ul id="listCity" class="list__city">
                                 <li>
                                     <a href="#">Amur</a>
                                 </li>
@@ -159,6 +160,7 @@
             </div>
         </div>
     </div>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
